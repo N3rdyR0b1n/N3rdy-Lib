@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "n3rdyr0b1n.lib.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin",
+		"ClientLMBMixin",
+     	"NbtObjectStackMixin",
+		"NbtTypeMixin",
+		"PlayerAttributeMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
