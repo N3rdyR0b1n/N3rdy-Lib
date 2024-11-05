@@ -21,8 +21,8 @@ public class ModItemGroup {
                         .icon(() -> new ItemStack(ModItems.TEST)).entries(((displayContext, entries) -> {
                             entries.add(ModItems.TEST);
                             entries.add(ModItems.ATTTEST);
+                            entries.add(ModItems.LCT);
                         })).build());
-
 
     }
 }

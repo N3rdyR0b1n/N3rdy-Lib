@@ -50,7 +50,7 @@ public abstract class ClientLMBMixin {
 	@Inject(method = "handleInputEvents()V", at = @At("HEAD"), cancellable = true)
 	private void LeftHoldUtility(CallbackInfo cir) {
 		MinecraftClient client = ((MinecraftClient) (Object) this);
-		if (client.options == null && client.options.attackKey.isPressed()) {
+		if (client.options != null && client.options.attackKey.isPressed()) {
 			ItemStack LeftClickstack = client.player.getStackInHand(client.player.getActiveHand());
 			if (LeftClickstack.getItem() instanceof LeftMouseItem) {
 				((LeftMouseItem) LeftClickstack.getItem()).onLmbHoldClient(client.player, LeftClickstack);

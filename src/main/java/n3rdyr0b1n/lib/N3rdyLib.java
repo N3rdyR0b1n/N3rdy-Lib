@@ -1,6 +1,7 @@
 package n3rdyr0b1n.lib;
 
 import n3rdyr0b1n.lib.items.nbt.ErrorNbtObject;
+import n3rdyr0b1n.lib.networking.NetWorkChannels;
 import n3rdyr0b1n.lib.test.ModItemGroup;
 import n3rdyr0b1n.lib.test.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -21,7 +22,7 @@ public class N3rdyLib implements ModInitializer {
 		ErrorNbtObject.Serialised = new ErrorNbtObject().Serialise();
 		ModItems.registerModItems();
 		ModItemGroup.registerItemGroup();
-
+		NetWorkChannels.registerChannelIds();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.

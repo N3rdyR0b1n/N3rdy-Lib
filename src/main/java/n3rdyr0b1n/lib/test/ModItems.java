@@ -16,6 +16,9 @@ public class ModItems {
             new AttributeDebugItem(new FabricItemSettings().maxCount(1))
     );
 
+    public static final Item LCT = registerItems("clicktest",
+            new TestItem2(new FabricItemSettings().maxCount(1))
+    );
 
     private static Item registerItems(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(N3rdyLib.MOD_ID,name), item);
@@ -24,7 +27,7 @@ public class ModItems {
 
 
     public static void registerModItems() {
-        N3rdyLib.LOGGER.info("Registering test items for" + N3rdyLib.MOD_ID);
+        N3rdyLib.LOGGER.info("Registering test items for " + N3rdyLib.MOD_ID);
     }
 
 }
